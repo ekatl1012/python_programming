@@ -1,6 +1,6 @@
 # 입출력
 
-a * input()
+a = input()
 print(a, end="")
 print(type(a))
 print(a, type(a), sep=",")
