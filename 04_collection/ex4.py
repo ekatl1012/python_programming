@@ -129,3 +129,12 @@ total=sum(price*num for nam, price, num in stocks)
 total=sum([price*num for name, price, num in stocks])
 
 print(f"총액:{total:,}원")                                                    # ✅ 총액: 21,000원
+
+stocks={
+    ("사과", "바나나", "체리"),
+    (1000, 2000, 5000),
+    (5,3,2)
+}
+
+total=sum(price*num for _, price, num in zip(*stocks))
+print(f"출력: {total,}원")
